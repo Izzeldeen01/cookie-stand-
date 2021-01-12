@@ -122,19 +122,22 @@ Header();
 var Seattle = new Shop("Seattle", 23, 65, 6.3);
 Seattle.getCustomer();
 Seattle.getCookies();
+Seattle.render();
 var Tokyo = new Shop("Tokyo", 3, 24, 1.2);
 Tokyo.getCustomer();
 Tokyo.getCookies();
+Tokyo.render();
 var Dubai = new Shop("Dubai", 11, 38, 3.7);
 Dubai.getCustomer();
 Dubai.getCookies();
-
+Dubai.render();
 var Paris = new Shop("Paris", 20, 38, 2.3);
 Paris.getCustomer();
 Paris.getCookies();
-
+Paris.render();
 var Lima = new Shop("Lima", 2, 16, 4.6);
 Lima.getCustomer();
 Lima.getCookies();
+Lima.render();
 console.log("Shops : ", Shops);
 Footer();
