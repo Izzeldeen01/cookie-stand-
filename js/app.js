@@ -1,5 +1,5 @@
 "use strict";
-let hours = [
+var hours = [
   "6:00am",
   "7:00am",
   "8:00am",
@@ -16,14 +16,13 @@ let hours = [
   "7:00pm",
   "8:00pm",
 ];
-
 var table = document.createElement("table");
 var div = document.getElementById("our-store");
-
 
 function getRandomInt(minvalue, maxvalue) {
   var randomNum = Math.random();
   return Math.floor(randomNum * (maxvalue - minvalue + 1)) + minvalue;
+}
 
 var Shops = [];
 function Shop(name, min, max, avg) {
@@ -50,7 +49,7 @@ Shop.prototype.getCookies = function () {
   }
 };
 
-Shop.prototype.render = function () {
+Shop.prototype.Render = function () {
   for (let i = 0; i < Shops.length; i++) {
     var tr = document.createElement("tr");
     var total = 0;
@@ -123,22 +122,17 @@ Header();
 var Seattle = new Shop("Seattle", 23, 65, 6.3);
 Seattle.getCustomer();
 Seattle.getCookies();
-Seattle.render();
-var Tokyo = new Shop("Tokyo", 3, 24, 1.2);
+Seattle.Render();
+var Tokyo = new Shop("Tokyo", 3, 21, 1.2);
 Tokyo.getCustomer();
 Tokyo.getCookies();
-Tokyo.render();
-var Dubai = new Shop("Dubai", 11, 38, 3.7);
-Dubai.getCustomer();
-Dubai.getCookies();
-Dubai.render();
-var Paris = new Shop("Paris", 20, 38, 2.3);
-Paris.getCustomer();
-Paris.getCookies();
-Paris.render();
-var Lima = new Shop("Lima", 2, 16, 4.6);
+Tokyo.Render();
+var Lima = new Shop("Lima", 30, 70, 7.2);
 Lima.getCustomer();
 Lima.getCookies();
-Lima.render();
+Lima.Render();
 console.log("Shops : ", Shops);
+
 Footer();
+
+
