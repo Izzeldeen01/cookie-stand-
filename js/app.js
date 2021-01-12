@@ -132,4 +132,7 @@ Lima.getCustomer();
 Lima.getCookies();
 Lima.Render();
 console.log("Shops : ", Shops);
+
 Footer();
+
+
