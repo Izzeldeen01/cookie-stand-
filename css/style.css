@@ -1,0 +1,30 @@
+header {
+    height: 100px;
+    background-color: whitesmoke;
+
+}
+#logo {
+    height: 100px;
+    padding-left: 0px;
+}
+.navlist {
+    position: relative;
+    display: inline;
+    color : black ; 
+}
+.maindiv h2 {
+    position: relative;
+    float : right;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.maindiv p {
+    position: relative;
+    float : right ;
+
+}
+.secdiv {
+    
+display: inline;
+
+}
