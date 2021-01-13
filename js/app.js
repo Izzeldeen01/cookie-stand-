@@ -118,6 +118,19 @@ function Footer() {
   table.appendChild(tr);
   div.appendChild(table);
 }
+
+var shopform =document.getElementById('shopform');
+shopform.addEventListener('submit',submitter)
+function submitter(event){
+  event.preventDefault()
+  console.log(event);
+  var name = event.target.name.value 
+  console.log(name);
+}
+
+
+
+
 Header();
 var Seattle = new Shop("Seattle", 23, 65, 6.3);
 Seattle.getCustomer();
