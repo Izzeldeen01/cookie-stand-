@@ -120,12 +120,22 @@ function Footer() {
 }
 
 var shopform =document.getElementById('shopform');
-shopform.addEventListener('submit',submitter)
+shopform.addEventListener('submit',submitter);
 function submitter(event){
-  event.preventDefault()
+  event.preventDefault();
   console.log(event);
-  var name = event.target.name.value 
+  var name = event.target.namefield.value 
   console.log(name);
+
+  var max = event.target.maxfield.value 
+  console.log(max);
+
+  var min = event.target.minfield.value 
+  console.log(min);
+
+  var avg = event.target.avgfield.value 
+  console.log(avg);
+ 
 }
 
 
