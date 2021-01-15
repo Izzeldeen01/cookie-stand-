@@ -88,8 +88,7 @@ function Header() {
   tr.appendChild(td);
   table.appendChild(tr);
   div.appendChild(table);
-}
-
+};
 function Footer() {
   var tr = document.createElement("tr");
   var totalGrand = 0;
@@ -117,15 +116,19 @@ function Footer() {
   tr.appendChild(td);
   table.appendChild(tr);
   div.appendChild(table);
-}
+};
+
 
 var shopform =document.getElementById('shopform');
 shopform.addEventListener('submit',submitter);
 function submitter(event){
   event.preventDefault();
   console.log(event);
+ 
+
+
   var name = event.target.namefield.value 
-  console.log(name);
+  console.log('name', name);
 
   var max = event.target.maxfield.value 
   console.log(max);
@@ -135,8 +138,13 @@ function submitter(event){
 
   var avg = event.target.avgfield.value 
   console.log(avg);
+  
+  var name = new shop (name , min , max ,avg );
+  
+
  
 }
+
 
 
 
