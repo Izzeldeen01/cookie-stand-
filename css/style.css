@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&display=swap');
+ 
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 header {
     height: 100px;
     background-color: whitesmoke;
+    
 
 }
+
+
 #logo {
     height: 100px;
     padding-left: 0px;
 }
+.headernav {
+    margin-top: -10%;
+}
 .navlist {
-    position: relative;
+    
     display: inline;
     color : black ; 
+    float:  right ;
+    padding-left: 5%;
+margin-top: 3%;
 }
 .maindiv h2 {
     position: relative;
@@ -27,4 +41,28 @@ header {
     
 display: inline;
 
+}
+
+#shopform {
+    margin-top: 5%;
+}
+.footernav {
+   display: inline-block;
+}
+
+.text {
+    
+
+    font-family: 'Itim', cursive;
+}
+#shopform  {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+#our-store {
+
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+main>img {
+    padding-top: 5%;
 }
