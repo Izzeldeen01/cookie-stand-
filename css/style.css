@@ -54,14 +54,17 @@ display: inline;
     
 
     font-family: 'Itim', cursive;
+    background-color: powderblue;
 }
 #shopform  {
     font-family: 'Encode Sans Semi Expanded', sans-serif;
+    background-color: salmon;
 }
 
 #our-store {
 
     font-family: 'Encode Sans Semi Expanded', sans-serif;
+    background-color: salmon;
 }
 main>img {
     padding-top: 5%;
